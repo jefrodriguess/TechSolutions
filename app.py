@@ -19,7 +19,7 @@ def index():
 
 @app.route('/clientes', methods=['GET', 'POST'])
 def clientes():
-    if request.methods == 'POST':
+    if request.method == 'POST':
         nome == request.form['nome']
         email == request.form['email']
         telefone == request.form['telefone']
@@ -39,7 +39,7 @@ def clientes():
 
 @app.route('/funcionarios', methods=['GET', 'POST'])
 def funcionarios():
-    if request.methods == 'POST':
+    if request.method == 'POST':
         nome == request.form['nome']
         cargo == request.form['cargo']
         email == request.form['email']
@@ -58,8 +58,8 @@ def funcionarios():
     return render_template('funcionarios.html')
 
 @app.route('/produtos', methods=['GET', 'POST'])
-def funcionarios():
-    if request.methods == 'POST':
+def produtos():
+    if request.method == 'POST':
         nome == request.form['nome']
         categoria == request.form['categoria']
         preco == request.form['preco']
@@ -77,8 +77,8 @@ def funcionarios():
     return render_template('produtos.html')
 
 @app.route('/vendas', methods=['GET', 'POST'])
-def funcionarios():
-    if request.methods == 'POST':
+def vendas():
+    if request.method == 'POST':
         id_clientes == request.form['id_clientes']
         id_produtos == request.form['id_produtos']
         data_vendas == request.form['data_vendas']
