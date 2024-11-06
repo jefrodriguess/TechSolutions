@@ -20,11 +20,11 @@ def index():
 @app.route('/clientes', methods=['GET', 'POST'])
 def clientes():
     if request.method == 'POST':
-        nome == request.form['nome']
-        email == request.form['email']
-        telefone == request.form['telefone']
-        cidade == request.form['cidade']
-        estado == request.form['estado']
+        nome = request.form['nome']
+        email = request.form['email']
+        telefone = request.form['telefone']
+        cidade = request.form['cidade']
+        estado = request.form['estado']
 
         conn = get_db_connection()
         cursor = conn.cursor()
