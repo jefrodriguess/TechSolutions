@@ -40,11 +40,11 @@ def clientes():
 @app.route('/funcionarios', methods=['GET', 'POST'])
 def funcionarios():
     if request.method == 'POST':
-        nome == request.form['nome']
-        cargo == request.form['cargo']
-        email == request.form['email']
-        telefone == request.form['telefone']
-        salario == request.form['salario']
+        nome = request.form['nome']
+        cargo = request.form['cargo']
+        email = request.form['email']
+        telefone = request.form['telefone']
+        salario = request.form['salario']
         
         conn = get_db_connection()
         cursor = conn.cursor()
@@ -60,10 +60,10 @@ def funcionarios():
 @app.route('/produtos', methods=['GET', 'POST'])
 def produtos():
     if request.method == 'POST':
-        nome == request.form['nome']
-        categoria == request.form['categoria']
-        preco == request.form['preco']
-        quantidade_em_estoque == request.form['quantidade_em_estoque']
+        nome = request.form['nome']
+        categoria = request.form['categoria']
+        preco = request.form['preco']
+        quantidade_em_estoque = request.form['quantidade_em_estoque']
 
         conn = get_db_connection()
         cursor = conn.cursor()
@@ -79,11 +79,11 @@ def produtos():
 @app.route('/vendas', methods=['GET', 'POST'])
 def vendas():
     if request.method == 'POST':
-        id_clientes == request.form['id_clientes']
-        id_produtos == request.form['id_produtos']
-        data_vendas == request.form['data_vendas']
-        quantidade == request.form['quantidade']
-        valor_total == request.form['valor_total']
+        id_clientes = request.form['id_clientes']
+        id_produtos = request.form['id_produtos']
+        data_vendas = request.form['data_vendas']
+        quantidade = request.form['quantidade']
+        valor_total = request.form['valor_total']
         
         conn = get_db_connection()
         cursor = conn.cursor()
