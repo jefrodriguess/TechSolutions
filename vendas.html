@@ -6,14 +6,12 @@
 </head>
 <body>
     <h1>Cadastro de Vendas </h1>
-    <hr style="border: 0; height: 5px; background-color: rgb(255, 0, 128);">
     <form method="post">
-        id_clientes: <input type="text" name="id_clientes" required><br>
-        id_produtos: <input type="text" name="id_produtos" required><br>
-        data_vendas: <input type="text" name="data_vendas" required><br>
-        quantidade: <input type="number" name="quantidade" required><br>
-        valor_total: <input type="number" name="valor_total" required><br>
-        
+        <input type="number" name="id_clientes" placeholder="Id Clientes" required><br>
+        <input type="number" name="id_produtos" placeholder="Id Produtos" required><br>
+        <input type="number" name="quantidade" placeholder="Quantidade" required><br>
+        <input type="number" name="valor_total" placeholder="Valor Total" required><br>
+        <input type="date" name="data_vendas" placeholder="Data Vendas" required><br>
         <br>
         <input type="submit" value="Cadastrar">
         <input type="reset" value="Limpar">
@@ -22,4 +20,48 @@
     <br>
     <a href="/">Voltar</a>
 </body>
+
+<style>
+    body {
+            font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+            background-color: rgb(233, 122, 94); /* Cor de fundo da página */
+            color: hsl(46, 92%, 49%); /* Cor do texto */
+            list-style: none;
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin: 100px auto;
+            
+        }
+
+        input[type="text"], input[type="number"], input[type="submit"], input[type="reset"] {
+            padding: 10px;
+            width: 80%;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #e7820f;
+            color: white;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: hsl(46, 92%, 49%);
+        }
+
+
+        input[type="reset"] {
+            background-color: #e7820f;
+            color: white;
+            cursor: pointer;
+        }
+        input[type="reset"]:hover {
+            background-color: hsl(46, 92%, 49%);
+        }
+</style>
 </html>
