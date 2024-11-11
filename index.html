@@ -2,15 +2,88 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Index</title>
+    <title>Index - TechSolutions</title>
 </head>
 <body>
-    <h1>BEM VINDO AO SISTEMA TECHSOLUTIONS</h1>
+    <h1>BEM-VINDO AO SISTEMA TECHSOLUTIONS</h1>
+    <img src="{{ url_for('static', filename='kaka.jpg') }}" alt="Python">
+    <!-- Lista de links de navegação -->
     <ul>
         <li><a href="/clientes">Cadastre o Cliente</a></li>
-        <li><a href="/funcionarios">Cadastre o Funcionario</a></li>
+        <li><a href="/funcionarios">Cadastre o Funcionário</a></li>
         <li><a href="/produtos">Cadastre o Produto</a></li>
         <li><a href="/vendas">Cadastre a Venda</a></li>
     </ul>
+
 </body>
+<style>
+    /* Definindo o estilo básico da página */
+    body {
+        font-family: Arial, Helvetica, sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif, 'Times New Roman', Times, serif, sans-serif;
+        background-color: rgb(233, 122, 94); /* Cor de fundo da página */
+        color: hsl(49, 85%, 50%); /* Cor do texto */
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Estilo do título principal */
+    h1 {
+        text-align: center;
+        color: hsl(46, 92%, 49%);
+        background-color: hwb(12 21% 19%); /* Cor de fundo azul */
+        padding: 20px;
+        margin: 0;
+    }
+
+    /* Estilo para os links */
+    a {
+        font-family: Georgia, 'Times New Roman', Times, serif, 'Times New Roman', Times, serif, Helvetica, sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif, 'Times New Roman', Times, serif, sans-serif;
+        text-decoration: none;
+        color: hsl(17, 95%, 45%);
+        padding: 8px;
+        margin: 5px;
+        display: inline-block;
+        background-color: #ecf0f1; /* Fundo claro para links */
+        border-radius: 5px;
+    }
+
+    a:hover {
+        background-color: hsl(49, 85%, 50%); /* Muda cor do fundo no hover */
+        color: white; /* Muda cor do texto no hover */
+    }
+
+    /* Estilo para a lista de links */
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 50px auto;
+        width: 200px;
+        text-align: center;
+    }
+
+    li {
+        margin-bottom: 10px;
+    }
+
+    /* Estilo do formulário */
+    form {
+        text-align: center;
+        margin-top: 50px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        margin: 50px auto;
+    }
+
+    img{
+        padding: 50px;
+        width: 300px;
+        margin: 50px auto;
+        display: block;
+    }
+
+</style>
+
 </html>
